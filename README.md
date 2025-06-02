@@ -4,10 +4,10 @@ Repository of data and code to reproduce analyses of Walker et al. 2026 - Influe
 ## Datasets
 Subdirectory for all final datasets used in this analysis
 
-## R Scripts
+## R
 Subdirectory for scripts used to: (1) filter and analyze environmental and biological data and (2) reproduce final NMDS ordinaiton models.
 
-## Java Scripts
+## Java
 Subdirectory for JavaScript developed for deriving and manipulating NDVI data from Google Earth Engine.
 
 ## Figures
