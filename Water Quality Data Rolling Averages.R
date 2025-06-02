@@ -23,7 +23,7 @@ library(dataRetrieval) # for calculating USGS water years
 
 #### Load data ####
 ## WQ dataset from Airtable
-WQ_data <- curl("https://raw.githubusercontent.com/jnherrmann/BMI-Climate-Flow-WQ-Project/refs/heads/main/2000_2024_QW_data_corrected.csv")
+WQ_data <- curl("https://raw.githubusercontent.com/jnherrmann/Deer-Creek-Bioassessment/refs/heads/main/Datasets/2000_2024_WQ_data_corrected.csv")
 WQ_data <- read.csv(WQ_data, header = T, sep = ",")
 
 ## Site codes cheat sheet, for converting back to old codes
@@ -33,7 +33,7 @@ site_codes <- site_codes[c(1:10, 12:30, 34:35),]
 site_codes <- site_codes[, c(2:3)]
 
 ## BMI data sample dates (project-specific, not an exhaustive list)
-bmi_dates <- curl("https://raw.githubusercontent.com/jnherrmann/BMI-Climate-Flow-WQ-Project/refs/heads/main/BMIdates_WY2003_2022_updated.csv")
+bmi_dates <- curl("https://raw.githubusercontent.com/jnherrmann/Deer-Creek-Bioassessment/refs/heads/main/Datasets/BMIdates_WY2003_2022_updated.csv")
 bmi_dates <- read.csv(bmi_dates, header = T, sep = ",")
 
 #### Clean WQ data ####
